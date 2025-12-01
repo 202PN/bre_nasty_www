@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bre Nasty - Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <header>
+            <figure class="logo">
+                <img src="img/logo.png" alt="" width="150px">
+            </figure>
+            <nav>
+                <button id="menu-toggle" class="menu-toggle">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                    </svg>
+                </button>
+            </nav>
+            <div class="menu-overlay" id="menu-overlay">
+                <div class="menu-content">
+                    <button class="menu-close" id="menu-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                    <ul class="menu-nav">
+                        <li><a href="#" data-slide="0" class="menu-link">PROTOTYPE - HOME</a></li>
+                        <li><a href="#" data-slide="1" class="menu-link">01. VIBES</a></li>
+                        <li><a href="#" data-slide="2" class="menu-link">02. THE GLORY</a></li>
+                        <li><a href="#" data-slide="3" class="menu-link">03. SKYWALKER</a></li>
+                        <li><a href="#" data-slide="4" class="menu-link">04. GALAGA</a></li>
+                        <li><a href="#" data-slide="5" class="menu-link">05. KOZMOS</a></li>
+                        <li><a href="#" data-slide="6" class="menu-link">06. RAZOR</a></li>
+                        <li><a href="#" data-slide="7" class="menu-link">07. GIVE ME YOUR HEART</a></li>
+                        <li><a href="#" data-slide="8" class="menu-link">08. MAKE YOU DANCE</a></li>
+                    </ul>
+                    <div class="menu-footer">
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/freebrenasty" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                            <a href="https://www.youtube.com/watch?v=YbRXbPBUzJw" class="social-link" target="_blank" rel="noopener noreferrer">YouTube</a>
+                            <a href="https://open.spotify.com/artist/6unkY4K27NIDhHRy0DUxv8?si=HL1SBacFRRyBHkp89jtj5w" class="social-link" target="_blank" rel="noopener noreferrer">Spotify</a>
+                        </div>
+                        <div class="build-by">
+                            <span class="build-by-text">BUILT BY 2ZERO2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="slider">
+            <div class="list">
+                <div class="item active">
+                    <div class="image" style="--url: url('img/cover.png')"></div>
+                    <div class="content">
+                        <h2>PROTOTYPE</h2>
+                        <p>
+                            A digital listening experience.<br>
+                            Presented by Bre Nasty.
+                        </p>
+                        <p>
+                            TRACK LIST:
+                            <span class="track-link" data-slide="1">01. VIBES</span>
+                            <span class="track-link" data-slide="2">02. THE GLORY</span> 
+                            <span class="track-link" data-slide="3">03. SKYWALKER</span> 
+                            <span class="track-link" data-slide="4">04. GALAGA</span> 
+                            <span class="track-link" data-slide="5">05. KOZMOS</span> 
+                            <span class="track-link" data-slide="6">06. RAZER</span> 
+                            <span class="track-link" data-slide="7">07. GIVE ME YOUR HEART</span> 
+                            <span class="track-link" data-slide="8">08. MAKE YOU DANCE</span>
+                        </p>
+                    </div>
+                    <div class="streaming-links prototype-streaming">
+                        <a href="https://open.spotify.com/album/0PIOdkCrY8JwAskhf2yTfB?si=0rQ9dinCQ3-U0GyDTjKZIA" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                            <img src="img/icons/spotify.svg" alt="Spotify" width="44" height="44">
+                        </a>
+                        <a href="https://music.apple.com/us/album/prototype/1851821742" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Apple Music">
+                            <img src="img/icons/appleMusic.svg" alt="Apple Music" width="44" height="44">
+                        </a>
+                        <a href="https://tidal.com/album/472016372/u" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Tidal">
+                            <img src="img/icons/tidal.svg" alt="Tidal" width="44" height="44">
+                        </a>
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="image" style="--url: url('img/2.jpg')"></div>
+                    <div class="content">
+                        <h2>01. VIBES</h2>
+                    </div>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/track/5LRx5LIK70i6ML7Sd3wORr?si=b267d1df675145d2" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                            <img src="img/icons/spotify.svg" alt="Spotify" width="44" height="44">
+                        </a>
+                        <a href="https://music.apple.com/us/album/vibes/1851821742?i=1851821743" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Apple Music">
+                            <img src="img/icons/appleMusic.svg" alt="Apple Music" width="44" height="44">
+                        </a>
+                        <a href="https://tidal.com/track/472016373/u" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Tidal">
+                            <img src="img/icons/tidal.svg" alt="Tidal" width="44" height="44">
+                        </a>
+                    </div>
+                    <button class="play-pause-btn" data-slide="1">
+                        <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                        </svg>
+                    </button>
+                    <audio class="slide-audio" preload="auto">
+                        <source src="audio/Vibes.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/3.jpg')"></div>
+                    <div class="content">
+                        <h2>02. THE GLORY</h2>
+                    </div>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/track/4YyOocaQBNtiLMEulN4duQ?si=d684800534de4fe9" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                            <img src="img/icons/spotify.svg" alt="Spotify" width="24" height="24">
+                        </a>
+                        <a href="https://music.apple.com/us/album/the-glory/1851821742?i=1851821746" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Apple Music">
+                            <img src="img/icons/appleMusic.svg" alt="Apple Music" width="24" height="24">
+                        </a>
+                        <a href="https://tidal.com/track/472016374/u" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Tidal">
+                            <img src="img/icons/tidal.svg" alt="Tidal" width="24" height="24">
+                        </a>
+                    </div>
+                    <button class="play-pause-btn" data-slide="2">
+                        <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                        </svg>
+                    </button>
+                    <audio class="slide-audio" preload="auto">
+                        <source src="audio/The_Glory.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/4.jpg')"></div>
+                    <div class="content">
+                        <h2>03. SKYWALKER</h2>
+                    </div>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/track/2K3jXCPURbuPaWlRSplolo?si=13c46bf95c08421e" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                            <img src="img/icons/spotify.svg" alt="Spotify" width="24" height="24">
+                        </a>
+                        <a href="https://music.apple.com/us/album/skywalker/1851821742?i=1851821747" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Apple Music">
+                            <img src="img/icons/applemusic.svg" alt="Apple Music" width="24" height="24">
+                        </a>
+                        <a href="https://tidal.com/track/472016375/u" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Tidal">
+                            <img src="img/icons/tidal.svg" alt="Tidal" width="24" height="24">
+                        </a>
+                    </div>
+                    <button class="play-pause-btn" data-slide="3">
+                        <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                        </svg>
+                    </button>
+                    <audio class="slide-audio" preload="auto">
+                        <source src="audio/Skywalker.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/5.jpg')"></div>
+                    <div class="content">
+                        <h2>04. GALAGA</h2>
+                    </div>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/track/5DhKY9zkddGdFEUOOxxIt2?si=bb55bc040e7b440e" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                            <img src="img/icons/spotify.svg" alt="Spotify" width="24" height="24">
+                        </a>
+                        <a href="https://music.apple.com/us/album/galaga/1851821742?i=1851821748" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Apple Music">
+                            <img src="img/icons/applemusic.svg" alt="Apple Music" width="24" height="24">
+                        </a>
+                        <a href="https://tidal.com/track/472016376/u" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Tidal">
+                            <img src="img/icons/tidal.svg" alt="Tidal" width="24" height="24">
+                        </a>
+                    </div>
+                    <button class="play-pause-btn" data-slide="4">
+                        <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                        </svg>
+                    </button>
+                    <audio class="slide-audio" preload="auto">
+                       <source src="audio/Galaga.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/6.jpg')"></div>
+                    <div class="content">
+                        <h2>05. KOZMOS</h2>
+                    </div>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/track/6fpyRqTs5MVztxSgHeoc8y?si=fee83b2df2964cef" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                            <img src="img/icons/spotify.svg" alt="Spotify" width="24" height="24">
+                        </a>
+                        <a href="https://music.apple.com/us/album/kozmos/1851821742?i=1851821749" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Apple Music">
+                            <img src="img/icons/applemusic.svg" alt="Apple Music" width="24" height="24">
+                        </a>
+                        <a href="https://tidal.com/track/472016377/u" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Tidal">
+                            <img src="img/icons/tidal.svg" alt="Tidal" width="24" height="24">
+                        </a>
+                    </div>
+                    <button class="play-pause-btn" data-slide="5">
+                        <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                        </svg>
+                    </button>
+                    <audio class="slide-audio" preload="auto">
+                        <source src="audio/Kozmos.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/7.jpg')"></div>
+                    <div class="content">
+                        <h2>06. RAZER</h2>
+                    </div>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/track/66qWVHkFEnh790etanS11u?si=2601b6e9e81144ab" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                            <img src="img/icons/spotify.svg" alt="Spotify" width="24" height="24">
+                        </a>
+                        <a href="https://music.apple.com/us/album/razer/1851821742?i=1851821750" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Apple Music">
+                            <img src="img/icons/applemusic.svg" alt="Apple Music" width="24" height="24">
+                        </a>
+                        <a href="https://tidal.com/track/472016378/u" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Tidal">
+                            <img src="img/icons/tidal.svg" alt="Tidal" width="24" height="24">
+                        </a>
+                    </div>
+                    <button class="play-pause-btn" data-slide="6">
+                        <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                        </svg>
+                    </button>
+                    <audio class="slide-audio" preload="auto">
+                        <source src="audio/Razer.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/8.jpg')"></div>
+                    <div class="content">
+                        <h2>07. GIVE ME YOUR HEART</h2>
+                    </div>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/track/4esKkk4WJDGuGVJcJuLuMB?si=3fc0d185f3b8428f" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                            <img src="img/icons/spotify.svg" alt="Spotify" width="24" height="24">
+                        </a>
+                        <a href="https://music.apple.com/us/album/give-me-your-heart/1851821742?i=1851821751" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Apple Music">
+                            <img src="img/icons/applemusic.svg" alt="Apple Music" width="24" height="24">
+                        </a>
+                        <a href="https://tidal.com/track/472016379/u" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Tidal">
+                            <img src="img/icons/tidal.svg" alt="Tidal" width="24" height="24">
+                        </a>
+                    </div>
+                    <button class="play-pause-btn" data-slide="7">
+                        <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                        </svg>
+                    </button>
+                    <audio class="slide-audio" preload="auto">
+                        <source src="audio/Give_Me_Your_Heart.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/9.jpg')"></div>
+                    <div class="content">
+                        <h2>08. MAKE YOU DANCE</h2>
+                    </div>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/track/0KYMTnbkhhCElaUkwe0x2A?si=3cb277209a044a15" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                            <img src="img/icons/spotify.svg" alt="Spotify" width="24" height="24">
+                        </a>
+                        <a href="https://music.apple.com/us/album/make-you-dance/1851821742?i=1851821752" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Apple Music">
+                            <img src="img/icons/applemusic.svg" alt="Apple Music" width="24" height="24">
+                        </a>
+                        <a href="https://tidal.com/track/472016380/u" class="streaming-link" target="_blank" rel="noopener noreferrer" aria-label="Tidal">
+                            <img src="img/icons/tidal.svg" alt="Tidal" width="24" height="24">
+                        </a>
+                    </div>
+                    <button class="play-pause-btn" data-slide="8">
+                        <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                        </svg>
+                    </button>
+                    <audio class="slide-audio" preload="auto">
+                        <source src="audio/Make_U_Dance.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="arrows">
+                <button id="prev">
+                    <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
