@@ -9,7 +9,6 @@ let currentAudio = null;
 let audioTimeout = null;
 let audioEnabled = false;
 let userControlledAudio = false; // Flag to track if user manually controls audio
-const SNIPPET_DURATION = 60000; // 60 seconds in milliseconds
 
 // Enable audio after first user interaction (required by browsers)
 const enableAudio = () => {
@@ -88,6 +87,8 @@ const playAudioSnippet = () => {
         return;
     }
     
+    // Store the previous audio before stopping
+    const previousAudio = currentAudio;
     stopAllAudio();
     
     // Only play if audio is enabled (user has interacted)
@@ -109,6 +110,8 @@ const playAudioSnippet = () => {
         // Check if we have a valid src
         if (audio.src) {
             currentAudio = audio;
+            // When switching slides, stopAllAudio already reset previous audio to 0
+            // For auto-play, always start from beginning when switching slides
             audio.currentTime = 0;
             
             // Load the audio first to get metadata
@@ -128,15 +131,7 @@ const playAudioSnippet = () => {
                 });
             }
             
-            // Stop after snippet duration
-            audioTimeout = setTimeout(() => {
-                if (currentAudio === audio && !userControlledAudio) {
-                    currentAudio.pause();
-                    currentAudio.currentTime = 0;
-                    currentAudio = null;
-                    updatePlayPauseButton(active, false);
-                }
-            }, SNIPPET_DURATION);
+            // Auto-play continues until manually stopped - no timeout
         } else {
             console.log('No audio source found for slide', active);
         }
@@ -277,16 +272,21 @@ const setupPlayPauseButtons = () => {
                 }
     
                 currentAudio = audio;
+                userControlledAudio = true;
                 
-                // Reset to beginning before playing
-                audio.currentTime = 0;
+                // Only reset to beginning if audio has ended
+                // Otherwise resume from where it was paused (currentTime is preserved)
+                if (audio.ended) {
+                    audio.currentTime = 0;
+                }
+                // If resuming the same audio, currentTime is already preserved from when it was paused
     
                 // Play the audio
                 // Don't call load() unnecessarily - it causes re-requests
                 const playPromise = audio.play();
                 if (playPromise !== undefined) {
                     playPromise.then(() => {
-                        console.log('Audio playing successfully for slide:', slideIndex);
+                        console.log('Audio playing successfully for slide:', slideIndex, 'from position:', audio.currentTime);
                         updatePlayPauseButton(slideIndex, true);
         
                         // Clear any existing timeout
